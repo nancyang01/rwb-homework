@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+.wrap{
+    margin: 0 auto;
+    background: #efe9e7;
+    position: relative;
+}
+
+/* @media (max-width: 768px) {
+    .wrap {
+      max-width: 768px;
+    }
+  } */
+
+.container{
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.75);
+    z-index:10;
+}
+
+.container .navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar i.bar{
+    color:#fff;
+    font-size: 25px;
+    display:none;
+    margin-right: 20px;
+}
+
+@media (max-width:768px) {
+    .navbar i.bar{
+        display:block;
+    }
+
+    .navbar ul.menu{
+        display:none;
+    }
+}
+
+.navbar .logo-item{
+    background-image: url(./img/logo_w@svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 24px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin:10px 20px;
+}
+
+@media (max-width:768px) {
+    .navbar i.bar{
+        display:block;
+    }
+
+    .navbar ul.menu{
+        display:none;
+    }
+
+    .navbar .logo-item{
+        margin:10px auto;
+    }
+}
+
+
+ul.menu{
+    display:flex;
+}
+
+
+ul.menu li a{
+    color:#fff;
+    font-size: 18px;
+    display:block;
+    padding:10px 20px;
+}
+
+.banner{
+    background-image: url(./img/header_desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 420px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .banner{
+        background-image: url(./img/header_mobile.png);
+    }
+}
+
+.banner-filter{
+    background: rgba(0,0,0,0.35);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 40px;
+}
+
+.banner p{
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+    font-size: 20px;
+    z-index:1;
+}
+
+.banner span{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.recipe .container{
+    background: #efe9e7;
+}
+
+.recipe h3{
+    text-align: center;
+    color:#3D1101;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.recipe .container .menu{
+    display: flex;
+    justify-content: center;
+}
+
+.recipe .container .menu li{
+    width: 30%;
+    height:400px;
+    margin:10px;
+}
+
+.recipe .container .menu li img{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.recipe .container .menu li h4{
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
