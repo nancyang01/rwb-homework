@@ -1,5 +1,6 @@
-$(document).ready(function () {
-    $(".bar").click(function (e) { 
-      $(".navbar ul.menu").toggleClass("menu-show");
-    }); 
-  });
+$(document).ready(function() {
+    $('.bar').on('click',function(e){
+        // console.log("click")
+        $('.navbar ul.menu').toggleClass("menu-show")
+    })
+ });

@@ -57,7 +57,7 @@ ul{
 }
 
 
-ul.menu{
+.navbar ul.menu{
     display:flex;
 }
 
@@ -89,26 +89,26 @@ ul.menu li a{
 
     .navbar ul.menu{
         display:block;
-        width: 768px;
         max-height: 0px;
         overflow: hidden;
-        /*隱藏選單結束*/
-        transition: all 2.3s;
+        transition: max-height 2.3s;
         position: absolute;
-        /* z-index: 100; */
         top: 44px;
+        left:0;
+        right:0;
         background: rgba(0, 0, 0, 0.75);
     }
+
+    .menu-show .navbar ul.menu{
+        max-height: 300px;
+      }
 
     ul.menu li{
         text-align: center;
         padding-right:35px;
     }
 
-    .menu-show{
-        max-height: 500px;
-        transition: all 0.4s;
-      }
+
 }
 
 .banner{
@@ -162,7 +162,6 @@ ul.menu li a{
     font-weight: 400;
     margin: 20px 0;
     line-height: 1.5;
-
 }
 
 .recipe-item h3::before{
